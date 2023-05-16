@@ -40,6 +40,26 @@ function getResponse() {
   }, 1000); //1sec delay added
 }
 
+// ..............OPENAI API.................//
+// async function getOpenAIResponse(userText) {
+//   const response = await fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       'Authorization': 'Bearer API_KEY_HERE',  //API Key Here
+//     },
+//     body: JSON.stringify({
+//       prompt: userText,
+//       max_tokens: 10,
+//       temperature: 0.7,
+//     }),
+//   });
+
+//   const data = await response.json();
+//   return data.choices[0].text.trim();
+// }
+
+
 
 //......Collapsible......//
 var coll = document.getElementsByClassName("collapsible");
